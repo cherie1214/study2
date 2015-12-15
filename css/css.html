@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+
+
+    <style type="text/css">
+        h1{
+            color:red;
+            font-size:20px;
+            border:1px red solid;
+        }
+
+        #bye{color:blue; border:3px black solid;}
+
+        /*
+        css 기본문법 -> head부분에 쓰지만 body에 스타일을 해도 구동은 됨
+        h1 : 명령을 내리기 위한 선택
+        {} 선택된 엘리먼트 디자인적 요소를 정의하는 부분
+        속성 : 값 형태로 정의하면 된다
+        *마지막 세미클론은 항상 넣는 걸로!
+
+        같은 속성에서 다른 값을 줄 때 : #아이디
+        */
+
+        span{color:red;font-size:20px;border:1px red solid;}
+        #span2{font-size:50px;}
+
+        p{color:green;}
+        .redcolor{color:blue;}
+
+        /*id는 #으로 선택을 함
+        한 페이지에 같은 이름의 id는 중복 선언될 수 없음*/
+
+        /*class .으로 선택
+        한 페이지에 같은 이름의 클레스가 여러개 선택될 수 있음*/
+
+        /* id나 class를 만들 때 규칙
+        1. 첫글자가 숫자나 대문자로 시작하면 x
+        2. 언더바를 제외한 특수문자를 사용하면 x
+        3. 언더바는 첫글자 포함 사용 가능 */
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <h1 id="hello">안녕하세요</h1>
+    <h1 id="bye">안녕히가세요</h1>
+
+    <span>안녕하새오 스판이애오</span>
+    <span id="span2">안녕하새오 스판이애오</span>
+
+    <p class="redcolor"> 안녕하새오. 피 태크애오. 만나서 반가워오</p>
+    <p> 안녕하새오. 피 태크애오. 만나서 반가워오</p>
+    <p class="redcolor"> 안녕하새오. 피 태크애오. 만나서 반가워오</p>
+    <p> 안녕하새오. 피 태크애오. 만나서 반가워오</p>
+    <p> 안녕하새오. 피 태크애오. 만나서 반가워오</p>
+
+
+
+
+
+
+</body>
+</html>

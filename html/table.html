@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>table 생성 연습</title>
+</head>
+<body>
+
+
+<!--
+    테이블 주 사용 : 게시판, 단가표
+    (* CRM : 관리자 페이지, 운영 / ERP : 회계관리)
+      table : 박스. 테이블 사용시, table 태그를 사용하여 엘리먼트를 구성해야한다
+         tr : 한 줄 (행)
+             td : 줄 안에 각각의 데이터 ()열)
+-->
+
+
+
+<!--
+    테이블 영역
+    thead : 테이블의 머릿글 (제목) -> 필수 사항은 아님
+    tbody : 테이블의 컨텐츠
+    tfoot : 테이블의 합산정보 (total) -> 필수 사항은 아님
+                                     -> 위치는 thead와 tbody 사이 (접근성 때문)
+-->
+
+
+
+
+<!--
+    caption : 테이블의 제목, 리더기에서 읽었을 경우 '~에 대한 ㅁㅁ표입니다'
+    summary : 디테일한 속성을 이야기 해줌, 눈에는 보이지 않으나 리더기가 읽음 -> 필수 사항 아님
+
+    colgroup : 테이블 아이템, 즉 열의 넒이에 대한 디자인값을 넣을 때 사용
+               구성요소로는 빈태그 형식의 col을 사용
+               col의 속석으로는 style="" width="" 등을 사용하여 디자인을 조절할 수 있음
+
+    colspan : 숫자만큼 오른쪽 옆에 셀과 합침 *합친 같은 행의 옆에 셀은 지워야함
+    rowspan : 상하로 열을 합칠 때 *합친 밑에 열의 셍을 지워야함
+              단, thead와 tbody를 합칠 수 없음 -> tbody안에서만 합쳐야함
+
+    th scope="col" : 셀에 커서를 올렸을 때, 위에 제목을 읽어줌
+    th scope="row" : 셀에 커서를 올렸을 때, 왼쪽 제목을 읽어줌
+
+
+-->
+
+
+<!-- 셀렉트 -->
+<select>
+    <option>010</option>
+    <option>010</option>
+    <option>010</option>
+</select>
+
+
+
+
+
+
+    <table border="1" width="100%" summary="" >
+        <caption>게시판</caption>
+
+        <colgroup>
+            <col width="100" />
+            <col width="300" />
+            <col width="" />
+            <col width="" />
+        </colgroup>
+
+
+    <thead>
+        <tr>
+            <th scope="colgroup" colspan="2">번호</th>
+            <th scope="colgroup" colspan="2">작성자</th>
+        </tr>
+    </thead>
+
+    <thead>
+        <tr>
+            <th scope="col" >번호</th>
+            <th scope="col" >제목</th>
+            <th scope="col" >작성자</th>
+            <th scope="col" >작성일</th>
+        </tr>
+    </thead>
+
+
+        <tfoot>
+        <tr>
+            <th scope="row">foot</th>
+            <td>foot</td>
+            <td>foot</td>
+            <td>foot</td>
+        <tr>
+        </tfoot>
+
+        <tbody>
+        <tr>
+            <th scope="row">item</th>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <th scope="row">item</th>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        </tbody>
+
+
+    </table>
+
+
+
+
+</body>
+</html>

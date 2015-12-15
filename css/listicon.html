@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>list icon</title>
+
+    <style>
+    ul,li{border:1px orange solid;}
+    ul{list-style: none; padding:0; margin:0;}
+/*ul 한테는 기본적으로 margin과 padding이 들어있음 -> 거의 0으로 맞춰놓고 시작*/
+
+    div.list ul li{
+        background-image: url("../html/images/bgmap.png");
+        background-repeat: no-repeat;
+        padding-left: 15px;
+            }
+
+    div.list li.icon-1{background-position: 0 5px;}
+    div.list li.icon-2{background-position: 0 -19px;}
+    div.list li.icon-3{background-position: 0 -43px;}
+    div.list li.icon-4{background-position: 0 -67px;}
+    div.list li.icon-5{background-position: 0 -162px;}
+
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+    <!-- div.list>ul>li.icon-{text$}*5 -->
+    <div class="list">
+        <ul>
+            <li class="icon-1">text1</li>
+            <li class="icon-2">text2</li>
+            <li class="icon-3">text3</li>
+            <li class="icon-4">text4</li>
+            <li class="icon-5">text5</li>
+            <li class="icon-5">text6</li>
+            <li class="icon-5">text7</li>
+
+
+        </ul>
+    </div>
+</body>
+</html>

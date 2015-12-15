@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>news_css 전자 신문</title>
+</head>
+
+<style>
+/*
+    * -> 현재 있는 모든 태그들
+*/
+
+
+    *{padding:0; margin:0}
+    div{outline: 1px #F00 solid;}
+    h2{color:hotpink}
+    img{outline: 1px gray solid;}
+
+    .wrap{
+        width: 900px;
+        height: 540px;
+        margin: 80px auto 0; }
+
+        .top{height: 107px; margin: 0 30px 25px; border-bottom: 3px gray solid; outline: none;}
+        
+            .top .logo {width: 260px; height: 55px; float: left; margin: 20px 0 5px 0; outline: none;}
+                .top .banner{width: 468px; height: 60px; float: right; margin: 40px 0 8px 0; outline:none; }
+                .top .button_list{width: 320px; height:25px; margin-bottom: 3px; clear: left; 
+                                font-size:0; outline: none;}
+                    .top .button_list button,
+                    .top .button_list span{font-size: 11px;}
+                    .top .button_list button{border:0 none; text-indent:-999999px;
+                            background-image: url("../html/images/sp_nwstd.png");
+                            cursor: pointer;}
+                        
+                        .top .button_list button:first-child{margin-left:0;}
+                        .top .button_list button.btn1{background-position: -187px -199px;
+                                                    width: 66px;  height: 22px;}
+                        .top .button_list button.btn2{background-position: -293px -174px;
+                                                    width: 107px; height: 21px;}
+                        .top .button_list button.btn3{background-position: -500px -270px;
+                                                    width: 28px; height: 22px;}
+                                                  
+                                              
+                                              
+                                              
+
+        .contents{height: 380px; margin: 0 30px;}
+
+            .right{width: 513px; overflow:hidden; float:left;}
+
+                .right_top{width: 513px; height: 132px; margin-bottom: 10px;}
+
+                .right_contents{width: 162px; height: 219px; float:left;}
+                .right_list{width: 336px; height: 234px;
+                    margin: 8px 0 0 177px;}
+
+            .left{width: 307px; overflow:hidden; margin-left: 533px; }
+                .left_issue{width: 307px; height: 112px; margin-bottom: 8px;}
+                .left_contents{width: 307px; height: 255px;}
+        .site_link{width: 128px; height: 16px; float: right; margin-right:30px;}
+
+
+
+</style>
+<body>
+    <div class="wrap">
+        <div class="top">
+            
+            <h1 class="logo">
+
+                    <a href="http://www.etnews.com/">
+                        <img src="http://static.naver.net/newsstand/up/2013/0813/nsd114836462.gif" alt="">
+                    </a>
+
+            </h1>
+            
+            
+            <div class="banner">
+                <a href="http://ad.naver.com/adclick?unit=983F&ac=6669993&src=2691092&br=2150009&rk=Vm5GIApizUEAAB2ag90AAAHr&eltts=wZkyfYUUx%2BDNkHHx9Cz0Ag%3D%3D&oid=&&:::cl:::">
+                <img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01446516899395.jpg" alt="">
+                </a>
+            </div>
+            
+            
+            <div class="button_list">
+                <button class="btn1">구독하기</button>
+                <button class="btn2">이용자 한마디</button>
+                <button class="btn3">소셜보내기</button>
+                <span>12-14 11:10 편집</span>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="contents">
+            <div class="right">
+                <div class="right_top">
+                    <ul>   
+                       <li> <a href="http://www.etnews.com/20151211000344?mc=ns_001_00002">
+                            <h2>삼성전자, PC사업 되살린다</h2>
+                            <img class="samsung" width="160" height="94" src="http://static.naver.net/newsstand/2015/1214/etnews/111100/001.jpg" alt="">
+                            <span>삼성전자가 3년 만에 PC 독립사업팀을 만들었다. 사양산업이라 여긴 PC가 여전히 IT 주력제품으로 자리잡고 있기 때문이다. 중국 쑤저우 PC 생산공장 가동률도 높아질 ...</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="http://www.etnews.com/20151210000428?mc=ns_001_00004">
+                            <strong>삼성전자 베트남 공장 해외 생산거점 전진기지로 부상</strong>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="http://www.etnews.com/20151209000479?mc=ns_001_00005">
+                            <strong>삼성전자 조직개편, 신사업·신시장·현장경영에 초점</strong>
+                            </a>
+                
+                            
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                    
+                    
+                </div>
+                <div class="right_contents"></div>
+                <div class="right_list"></div>
+            </div>
+
+            <div class="left">
+                <div class="left_issue"></div>
+                <div class="left_contents"></div>
+            </div>
+        </div>
+        <div class="site_link"></div>
+
+
+
+    </div>
+</body>
+</html>

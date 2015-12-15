@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>회원가입창 학습</title>
+</head>
+<body>
+
+
+    <strong>회원정보입력</strong>
+<hr />
+    <p>* 표시는 필수 입력 사항입니다</p>
+
+<fieldset>
+
+    <ul>
+        <li><label for="userName"><strong>사용자 이름</strong></label>
+            <input type="text" id="userName"></li>
+
+<hr />
+
+        <li><label for="userId"><strong>아이디</strong></label>
+            <input type="text" id="userId"> <input type="button" value="중복확인"> <br />
+        <em>- 영문, 숫자 조합으로 6~20자까지 사용가능합니다.<br />
+            - 첫 글자는 영문으로 설정해 주십시오. </em>
+        </li>
+
+<hr />
+
+        <li><label for="userPw"><strong>비밀번호</strong></label>
+            <input type="text" id="userPw"> <br />
+        <em>- 영문, 숫자, 특수 문자 조합으로 8~20자까지 사용가능합니다. (영문은 대소문자 구분) <br />
+            - 유출되기 쉬운 비밀번호는 등록할 수 없습니다. (예:111, abcd, password 등) </em>
+        </li>
+
+<hr />
+
+        <li><label for="checkPw"><strong>비밀번호 확인</strong></label>
+            <input type="text" id="checkPw"></li>
+
+<hr />
+
+        <li><label for="userEmail"><strong>이메일</strong></label>
+            <input type="text" id="userEmail"> @ <input type="text"> <input type="text" value="직접입력"></li>
+
+<hr />
+
+        <li><label for="userPhone"><strong>연락처</strong></label>
+            <input type="text" id="userPhone"> - <input type="text"> - <input type="text">
+        </li>
+
+<hr />
+
+        <li><label for="userCellphone"><strong>휴대전화</strong></label>
+            <input type="text" value="010"> - <input type="text" id="userCellphone"> - <input type="text"></li>
+
+<hr />
+
+        <li><label for="userAddress"><strong>주소</strong></label>
+            <input type="text" id="userAddress"> - <input type="text"> <input type="button" value="주소찾기"> <br />
+                <input type="text"> <br /><input type="text">
+
+        </li>
+    </ul>
+
+
+</fieldset>
+
+<p><input type="submit" value="회원가입"></p>
+
+
+</body>
+</html>
